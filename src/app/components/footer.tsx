@@ -22,37 +22,37 @@ export function Footer() {
           <div className="md:col-span-6 grid grid-cols-2 md:grid-cols-3 gap-8">
             <div className="space-y-4">
               <Link
-                href="/residences"
+                href="#"
                 className="block hover:text-black transition-colors"
               >
                 Residences
               </Link>
               <Link
-                href="/services"
+                href="#"
                 className="block hover:text-black transition-colors"
               >
                 Services
               </Link>
               <Link
-                href="/design"
+                href="#"
                 className="block hover:text-black transition-colors"
               >
                 Design
               </Link>
               <Link
-                href="/neighborhood"
+                href="#"
                 className="block hover:text-black transition-colors"
               >
                 Neighborhood
               </Link>
               <Link
-                href="/availability"
+                href="#"
                 className="block hover:text-black transition-colors"
               >
                 Availability
               </Link>
               <Link
-                href="/contact"
+                href="#"
                 className="block hover:text-black transition-colors"
               >
                 Contact
@@ -60,13 +60,13 @@ export function Footer() {
             </div>
             <div className="space-y-4">
               <Link
-                href="/team"
+                href="#"
                 className="block hover:text-black transition-colors"
               >
                 Team
               </Link>
               <Link
-                href="/legal"
+                href="#"
                 className="block hover:text-black transition-colors"
               >
                 Legal
@@ -83,22 +83,22 @@ export function Footer() {
           {/* Contact Information */}
           <div className="md:col-span-3 space-y-4">
             <a
-              href="tel:212-935-5757"
+              href="tel:251911623715"
               className="block hover:text-black transition-colors"
             >
-              212-935-5757
+              +251911623715
             </a>
             <a
               href="mailto:info@111w57.com"
               className="block hover:text-black transition-colors"
             >
-              info@111w57.com
+              
             </a>
           </div>
         </div>
 
         {/* Branding Section */}
-        <div className="mt-20 space-y-8">
+        {/* <div className="mt-20 space-y-8">
           <div className="space-y-4">
             <Image
               src="/sothebys-logo.svg"
@@ -115,12 +115,12 @@ export function Footer() {
               className="opacity-80"
             />
           </div>
-        </div>
+        </div> */}
 
         {/* Bottom Bar */}
         <div className="mt-20 pt-8 border-t border-[#8B7355]/20 flex flex-col md:flex-row justify-between text-sm">
           <div className="space-x-8">
-            <span>COPYRIGHT© 111WEST57THSTREET 2025</span>
+            <span>COPYRIGHT© NXT Trading 2025</span>
             <Link
               href="/procedures"
               className="hover:text-black transition-colors"
@@ -135,7 +135,7 @@ export function Footer() {
             </Link>
           </div>
           <div className="mt-4 md:mt-0">
-            <span>SITE BY OUTPOST</span>
+            <span>SITE BY NXT</span>
           </div>
         </div>
       </div>

@@ -18,22 +18,22 @@ const futura = localFont({
 export default function Home() {
   const features = [
     {
-      title: "Contemporary Living",
+      title: "Find Your Perfect Home",
       href: "/living",
       imageUrl: "/skyline.jpg",
-      imageAlt: "Modern living space with Central Park view",
+      imageAlt: "Find Your Perfect Home",
     },
     {
-      title: "Heart of the City",
+      title: "Trusted by thousands of satisfied clients.",
       href: "/location",
       imageUrl: "/CBE.jpg",
-      imageAlt: "111W57 building in Manhattan skyline",
+      imageAlt: "Trusted by thousands of satisfied clients.",
     },
     {
       title: "World Class Services",
       href: "/services",
       imageUrl: "/generic1.jpg",
-      imageAlt: "Luxury indoor pool",
+      imageAlt: "",
     },
   ];
   return (
@@ -63,7 +63,7 @@ export default function Home() {
             </h2>
 
             <button className="group flex items-center space-x-4 text-sm tracking-widest hover:opacity-80 transition-opacity">
-              <span>WATCH THE FILM</span>
+              <span>Coming us</span>
               <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
             </button>
 
@@ -81,10 +81,10 @@ export default function Home() {
         <div className="pt-32 pb-16 container mx-auto px-8">
           {/* text-[#8B7355] */}
           <h2
-            className={`${futura.variable} font-serif text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.2]  max-w-[90%] md:max-w-[80%] lg:max-w-[70%]`}
+            className={`${futura.variable} text-[#e79494] font-serif text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.2]  max-w-[90%] md:max-w-[80%] lg:max-w-[70%]`}
           >
-            The shimmering tower offers a rarefied collection of breathtaking
-            full-floor residences.
+            Explore a wide range of properties, from cozy apartments to
+            luxurious estates.
           </h2>
         </div>
         {/* 
@@ -120,8 +120,8 @@ export default function Home() {
       <section className="container mx-auto px-8 py-24">
         <SplitSection
           title="Services"
-          subtitle="Tower living in a league of its own"
-          description="Residents enjoy the most elevated level of luxury living in Manhattan, with 24-hour dedicated staff, private security, and a specialized concierge service. Daily complimentary breakfast is catered by Le Bilboquet in the private Club 111, which features multiple dining rooms, a chef's catering kitchen, meeting rooms, children's playroom and a library."
+          subtitle="What We Offer"
+          description="Whether you’re purchasing your first home or selling your property, we make the process hassle-free by offering professional support at every step. For those looking to rent, we provide a wide range of listings to suit both short-term and long-term needs. If you own investment properties, our property management services take care of all the details, ensuring your peace of mind. Additionally, our market analysis services give you a clear understanding of real estate trends, empowering you to make informed decisions with confidence."
           imageUrl="/incomingBuilding.jpg"
           imageAlt="Club 111 luxury amenity space with glass walls and trees"
         />
