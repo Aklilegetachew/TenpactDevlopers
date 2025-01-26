@@ -35,17 +35,13 @@ export function SplitSection({
       >
         <div className="space-y-4">
           {subtitle && (
-            <h3 className=" text-lg font-light tracking-wide">
-              {subtitle}
-            </h3>
+            <h3 className=" text-lg font-light tracking-wide">{subtitle}</h3>
           )}
           <h2 className="font-serif  text-4xl md:text-5xl lg:text-6xl leading-[1.2] text-extrabold">
             {title}
           </h2>
         </div>
-        <p className=" text-lg leading-relaxed max-w-xl">
-          {description}
-        </p>
+        <p className=" text-lg leading-relaxed max-w-xl">{description}</p>
       </div>
 
       <div
@@ -54,17 +50,18 @@ export function SplitSection({
           imagePosition === "right" ? "" : "lg:order-1"
         )}
       >
-        <Image
+        <img
           src={imageUrl || "/placeholder.svg"}
           alt={imageAlt}
-          fill
-          className="object-cover"
-          sizes="(max-width: 1024px) 100vw, 50vw"
+          className="w-full h-full object-cover"
+          style={{
+            width: "100%", 
+            height: "100%",
+          }}
         />
       </div>
     </div>
   );
 }
-
 
 // text-[#8B7355]

@@ -31,12 +31,14 @@ export function FeatureGrid({ items, className }: FeatureGridProps) {
         >
           {/* Make the image container taller and responsive */}
           <div className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden">
-            <Image
+            <img
               src={item.imageUrl || "/placeholder.svg"}
               alt={item.imageAlt}
-              fill
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
-              sizes="(max-width: 768px) 100vw, 33vw"
+              className="w-full h-full object-fill transition-transform duration-700 group-hover:scale-105"
+              style={{
+                width: "100%", // Ensures the image fills the container
+                height: "100%", // Ensures the image fills the container
+              }}
             />
           </div>
           <div className="flex items-center mt-4 group-hover:text-black transition-colors">
