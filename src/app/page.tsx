@@ -26,13 +26,13 @@ export default function Home() {
     {
       title: "Trusted by thousands of satisfied clients.",
       href: "/location",
-      imageUrl: "/CBE.jpg",
+      imageUrl: "/greenvilage.jpg",
       imageAlt: "Trusted by thousands of satisfied clients.",
     },
     {
       title: "World Class Services",
       href: "/services",
-      imageUrl: "/generic1.jpg",
+      imageUrl: "/tenpactbridg.jpg",
       imageAlt: "",
     },
   ];

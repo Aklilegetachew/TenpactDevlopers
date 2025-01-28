@@ -60,22 +60,22 @@ export function Footer() {
             </div>
             <div className="space-y-4">
               <Link
-                href="#"
+                href="https://www.facebook.com/share/1BaYFdBGCf/"
                 className="block hover:text-black transition-colors"
               >
-                Team
+                Facebook
               </Link>
               <Link
-                href="#"
-                className="block hover:text-black transition-colors"
-              >
-                Legal
-              </Link>
-              <Link
-                href="https://instagram.com"
+                href="https://www.instagram.com/tenpact2025?igsh=dXJseTRyZTBmcm9n"
                 className="block hover:text-black transition-colors"
               >
                 Instagram
+              </Link>
+              <Link
+                href="https://www.tiktok.com/@tenpact3?_t=ZM-8tQoUZIhTdu&_r=1"
+                className="block hover:text-black transition-colors"
+              >
+                Tiktok
               </Link>
             </div>
           </div>
@@ -89,10 +89,16 @@ export function Footer() {
               +251911623715
             </a>
             <a
-              href="mailto:info@111w57.com"
+              href="mailto:info@tenpactdevelopers.com"
               className="block hover:text-black transition-colors"
             >
-              
+              info@tenpactdevelopers.com
+            </a>
+            <a
+              href="mailto:socials@tenpactdevelopers.com"
+              className="block hover:text-black transition-colors"
+            >
+              socials@tenpactdevelopers.com
             </a>
           </div>
         </div>

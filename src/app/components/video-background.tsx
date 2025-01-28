@@ -8,7 +8,7 @@ export function VideoBackground() {
         playsInline
         className="object-cover w-full h-full"
       >
-        <source src="/video-background.mp4" type="video/mp4" />
+        <source src="/tenpactdev.mp4" type="video/mp4" />
       </video>
       <div className="absolute inset-0 bg-black/30" />{" "}
       {/* Overlay for better text visibility */}
