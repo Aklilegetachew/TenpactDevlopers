@@ -105,7 +105,7 @@ export default function Home() {
             <h2
               className={`${futura.variable} font-extrabold font-serif text-4xl md:text-5xl lg:text-6xl max-w-xl`}
             >
-              Real State
+              Real Estate
               <br />
               Developers
             </h2>
