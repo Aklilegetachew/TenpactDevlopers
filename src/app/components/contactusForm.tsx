@@ -39,12 +39,10 @@ export default function ContactForm() {
   return (
     <div className="grid lg:grid-cols-2 gap-8 max-w-7xl mx-auto p-4">
       <div className="relative h-[600px] lg:h-auto">
-        <Image
+        <img
           src="/tenpact/floorTen.jpg"
           alt="Real estate team"
-          fill
-          className="object-cover rounded-lg"
-          priority
+          className="object-cover rounded-lg w-full h-full"
         />
       </div>
 

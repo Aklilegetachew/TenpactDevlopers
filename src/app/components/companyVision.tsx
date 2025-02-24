@@ -45,13 +45,12 @@ export default function CompanyProfile({
     <div className="max-w-7xl mx-auto p-4 md:p-8 lg:p-12">
       <div className="grid lg:grid-cols-[1fr,2fr] gap-12 items-start">
         <div className="relative">
-          <Image
+          <img
             src={logoSrc || "/placeholder.svg"}
             alt="Company Logo"
             width={400}
             height={400}
             className="w-full max-w-[400px] mx-auto"
-            priority
           />
         </div>
 

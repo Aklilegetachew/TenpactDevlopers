@@ -68,12 +68,11 @@ export function MainMenu({ isOpen, onClose }: MainMenuProps) {
           {/* Image - Hidden on mobile */}
           <div className="hidden lg:block relative max-w-[70%]">
             <div className="max-w-20">
-              <Image
+              <img
                 src="/bluePrintShort.jpg"
                 alt="blue print"
-                fill
-                className="object-cover"
-                sizes="10vw"
+                className="object-cover w-full h-full"
+                style={{ width: "10vw" }}
               />
             </div>
           </div>
