@@ -37,7 +37,7 @@ export function SplitSection({
           {subtitle && (
             <h3 className=" text-lg font-light tracking-wide">{subtitle}</h3>
           )}
-          <h2 className="font-serif  text-4xl md:text-5xl lg:text-6xl leading-[1.2] text-extrabold">
+          <h2 className=" text-[#ff6016] font-serif  text-4xl md:text-5xl lg:text-6xl leading-[1.2] text-extrabold">
             {title}
           </h2>
         </div>
@@ -55,7 +55,7 @@ export function SplitSection({
           alt={imageAlt}
           className="w-full h-full object-cover"
           style={{
-            width: "100%", 
+            width: "100%",
             height: "100%",
           }}
         />

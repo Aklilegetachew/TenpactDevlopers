@@ -9,6 +9,8 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { futura } from "./fonts/fonts";
 import { useParallax } from "../../hooks/useParallax";
 import PropertyGrid from "./components/imageListing";
+import WhyChooseUs from "./components/whyChoosUs";
+import EstablishmentSection from "./components/AppointmentStrip";
 
 export default function Home() {
   const scrollY = useParallax();
@@ -76,12 +78,19 @@ export default function Home() {
       propertyCount: 17,
       link: "/contact",
     },
+    {
+      id: "6",
+      image: "/tenpact/shopEnter.jpg",
+      title: "Site 6",
+      propertyCount: 17,
+      link: "/contact",
+    },
   ];
 
   return (
     <>
       <section
-        className={`${futura.variable} relative h-[100dvh] w-full overflow-hidden text-white`}
+        className={` relative h-[100dvh] w-full overflow-hidden text-white`}
       >
         <VideoBackground />
         <Header />
@@ -95,7 +104,7 @@ export default function Home() {
             style={{ y: titleY }}
           >
             <h1
-              className={`${futura.variable} font-extrabold font-serif text-[8vw] leading-none`}
+              className={` font-extrabold font-serif text-[8vw] leading-none`}
             >
               Tenpact
             </h1>
@@ -103,7 +112,7 @@ export default function Home() {
 
           <motion.div className="space-y-8 mb-8" style={{ y: subtitleY }}>
             <h2
-              className={`${futura.variable} font-extrabold font-serif text-4xl md:text-5xl lg:text-6xl max-w-xl`}
+              className={` font-extrabold font-serif text-4xl md:text-5xl lg:text-6xl max-w-xl`}
             >
               Real Estate
               <br />
@@ -133,7 +142,6 @@ export default function Home() {
           </motion.div>
         </motion.div>
       </section>
-
       <section id="residences" className="bg-white">
         <div className="pt-32 pb-16 container mx-auto px-8">
           <motion.h2
@@ -141,7 +149,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
             viewport={{ once: true, margin: "-100px" }}
-            className={`${futura.variable} font-thin text-red-800 font-serif text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.2] max-w-[90%] md:max-w-[80%] lg:max-w-[70%]`}
+            className={` font-thin text-red-800 font-serif text-[clamp(2.5rem,5vw,4.5rem)] leading-[1.2] max-w-[90%] md:max-w-[80%] lg:max-w-[70%]`}
           >
             Explore a wide range of properties, from cozy apartments to
             luxurious estates.
@@ -149,7 +157,19 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="  py-24 bg-white">
+        <EstablishmentSection />
+      </section>
+
       <section className="container mx-auto px-8 py-24 bg-white">
+        <div className="flex justify-center items-center py-12">
+          <h2
+            className={`text-3xl md:text-4xl font-bold mb-6  text-[#ff6016]  font-serif lg:text-5xl max-w-xl`}
+          >
+            Our Services
+          </h2>
+        </div>
+
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -159,15 +179,16 @@ export default function Home() {
           <FeatureGrid items={features} />
         </motion.div>
       </section>
+
+      <WhyChooseUs />
       <section className="flex justify-center items-center py-12">
         <h2
-          className={`${futura.variable}  font-serif text-4xl md:text-4xl lg:text-5xl max-w-xl`}
+          className={`text-3xl md:text-4xl font-bold mb-6  text-[#ff6016]  font-serif lg:text-5xl max-w-xl`}
         >
           Our Sites
         </h2>
       </section>
       <PropertyGrid properties={properties} />
-
       <section className="container mx-auto px-8 py-24">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -176,15 +197,14 @@ export default function Home() {
           viewport={{ once: true, margin: "-100px" }}
         >
           <SplitSection
-            title="Services"
+            title="Experience Tenpact in Person"
             subtitle="What We Offer"
-            description="Whether you're purchasing your first home or selling your property, we make the process hassle-free by offering professional support at every step. For those looking to rent, we provide a wide range of listings to suit both short-term and long-term needs. If you own investment properties, our property management services take care of all the details, ensuring your peace of mind. Additionally, our market analysis services give you a clear understanding of real estate trends, empowering you to make informed decisions with confidence."
+            description="Explore our premium commercial and residential properties up close. Visit our locations to see available listings, meet our team, and find the perfect space for your needs. Let’s turn your vision into reality—schedule your visit today!"
             imageUrl="/tenpact/floorTen.jpg"
-            imageAlt="Club 111 luxury amenity space with glass walls and trees"
+            imageAlt="Hed Office"
           />
         </motion.div>
       </section>
-
       <Footer />
     </>
   );

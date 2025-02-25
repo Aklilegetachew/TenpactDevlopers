@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Inter } from "next/font/google";
 
 // const geistSans = localFont({
 //   src: "./public/fonts/GeistVF.woff",
@@ -12,6 +13,8 @@ import "./globals.css";
 //   variable: "--font-geist-mono",
 //   weight: "100 900",
 // });
+
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
   title: "Tenpact Developers | Real State Developers",
@@ -25,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`  antialiased`}>{children}</body>
+      <body className={` ${inter.className} antialiased`}>{children}</body>
     </html>
   );
 }

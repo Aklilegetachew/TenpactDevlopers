@@ -64,8 +64,8 @@ export function Header() {
     <>
       <header
         className={cn(
-          "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
-          scrolled ? "bg-white text-black py-4" : "py-8"
+          "fixed top-0 left-0 right-0 z-50 transition-all duration-500 ",
+          scrolled ? "bg-white text-[#ff6016] py-4" : "py-8"
         )}
       >
         <nav className="flex justify-between items-center p-8">
@@ -81,7 +81,7 @@ export function Header() {
             ref={logoRef}
             href="/"
             className={cn(
-              "absolute left-1/2 -translate-x-1/2 font-serif m-2 text-2xl opacity-0 transition-all duration-500 ",
+              "absolute left-1/2 -translate-x-1/2  m-2 text-2xl opacity-0 transition-all duration-500 ",
               scrolled && "opacity-100"
             )}
           >
